@@ -5,8 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emergency Service</title>
     <link rel="shortcut icon" href="assets/emergency.png" type="image/x-icon">
+    <!-- daisyUI and tailwind cdn -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="bg-gray-100">
+    <header class="w-full bg-white  flex items-center justify-between px-6 py-3">
+        <div class="flex items-center gap-3">
+            <img class="w-10 h-10" src="assets/logo.png" alt="">
+            <h1 class="text-lg font-bold text-green-700">Emergency <br> Service</h1>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="heart flex items-center bg-green-100 px-6 py-1  rounded-full">
+                <span id="heart-number" class="text-black font-bold">0 </span>
+                <img class="w-5 h-5" src="assets/heart.png" alt="">
+            </div>
+             <div class="coin flex items-center bg-green-100 px-4 py-1 rounded-full">
+                <span id="coin-number" class="text-black font-bold">700 </span>
+                <img class="w-5 h-5" src="assets/coin.png" alt="">
+            </div>
+            <button class="btn bg-green-600 text-white rounded-full px-4 py-1 ">
+                <span id="copy-number">2 </span>Copy
+            </button>
+        </div>
+    </header>
 </body>
 </html>
